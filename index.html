@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elizabet Calisto - Estética de Resultados</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a1a1a;
+            scroll-behavior: smooth;
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #a6865d 0%, #7d6344 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-premium {
+            background: linear-gradient(135deg, #d4a373 0%, #a6865d 100%);
+        }
+        .btn-glow:hover {
+            box-shadow: 0 0 20px rgba(166, 134, 93, 0.3);
+        }
+        .testimonial-grid {
+            column-count: 1;
+        }
+        @media (min-width: 768px) {
+            .testimonial-grid { column-count: 2; }
+        }
+        @media (min-width: 1024px) {
+            .testimonial-grid { column-count: 3; }
+        }
+        .testimonial-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+        .photo-frame {
+            position: relative;
+            border-radius: 40px;
+            overflow: hidden;
+        }
+        .photo-frame::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 40px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- BOTÃO WHATSAPP -->
+    <a href="https://wa.me/554797451492" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25d366] p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center">
+        <i data-lucide="message-circle" class="w-7 h-7 text-white"></i>
+    </a>
+
+    <!-- NAV -->
+    <nav class="py-8 px-6 max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex flex-col">
+            <span class="font-bold tracking-[0.3em] text-lg">ELIZABET CALISTO</span>
+            <span class="text-[9px] tracking-[0.5em] text-stone-400 uppercase">Estética Avançada</span>
+        </div>
+        <div class="hidden md:flex gap-8 text-[11px] font-bold tracking-widest uppercase text-stone-500">
+            <a href="#procedimentos" class="hover:text-black transition-colors">Procedimentos</a>
+            <a href="#avaliacoes" class="hover:text-black transition-colors">Avaliações</a>
+            <a href="#sobre" class="hover:text-black transition-colors">A Clínica</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="pt-12 pb-24 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+            
+            <!-- COPY (Lado Esquerdo/Topo no Mobile) -->
+            <div class="lg:col-span-7">
+                <div class="inline-flex items-center gap-2 mb-6 px-3 py-1 bg-stone-50 border border-stone-100 rounded-full">
+                    <span class="w-2 h-2 bg-stone-300 rounded-full animate-pulse"></span>
+                    <span class="text-[10px] font-bold tracking-widest text-stone-500 uppercase font-medium">Referência em Brusque - SC</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-stone-900 leading-[1.05] mb-8">
+                    Recupere a sua <span class="text-gradient">melhor versão</span> com quem entende de resultados.
+                </h1>
+                
+                <p class="text-xl text-stone-500 font-light leading-relaxed mb-10 max-w-xl">
+                    Especialista em pós-operatório seguro e estética facial avançada. Transformamos o cuidado em autoestima através de tecnologia de ponta e mãos experientes.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/554797451492" class="bg-black text-white px-10 py-5 rounded-2xl font-bold text-sm tracking-widest uppercase hover:bg-stone-800 transition-all text-center btn-glow">
+                        Agendar Avaliação
+                    </a>
+                    <div class="flex items-center gap-4 px-6 py-4">
+                        <div class="flex -space-x-3">
+                            <div class="w-10 h-10 rounded-full border-2 border-white bg-stone-200"></div>
+                            <div class="w-10 h-10 rounded-full border-2 border-white bg-stone-300"></div>
+                            <div class="w-10 h-10 rounded-full border-2 border-white bg-stone-400"></div>
+                        </div>
+                        <p class="text-[11px] text-stone-400 font-medium leading-tight">
+                            <span class="text-black font-bold block">+1.200</span> Vidas transformadas
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOTO (Lado Direito) -->
+            <div class="lg:col-span-5 relative">
+                <div class="photo-frame shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)]">
+                    <!-- Placeholder para a foto enviada -->
+                    <img src="" alt="Elizabet Calisto" class="w-full aspect-[4/5] object-cover bg-stone-100">
+                </div>
+                
+                <!-- Floating Badge Google -->
+                <div class="absolute -bottom-10 -left-6 md:-left-12 bg-white p-6 rounded-[2rem] shadow-2xl border border-stone-50 flex items-center gap-5">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" class="w-8" alt="Google">
+                    <div>
+                        <div class="flex text-yellow-400 gap-0.5 mb-0.5">
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                        </div>
+                        <p class="text-xs font-bold">Avaliação 5.0</p>
+                        <p class="text-[10px] text-stone-400">Baseado no Google Meu Negócio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section id="procedimentos" class="py-24 bg-stone-50 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="group">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:bg-black group-hover:text-white transition-all">
+                        <i data-lucide="heart-pulse" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Pós-Operatório</h3>
+                    <p class="text-stone-500 font-light leading-relaxed">Recuperação monitorada e aceleração da cicatrização com protocolos específicos para cada cirurgia.</p>
+                </div>
+                <div class="group">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:bg-black group-hover:text-white transition-all">
+                        <i data-lucide="sparkles" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Estética Facial</h3>
+                    <p class="text-stone-500 font-light leading-relaxed">Tratamentos personalizados para rejuvenescimento, acne e hidratação profunda da derme.</p>
+                </div>
+                <div class="group">
+                    <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:bg-black group-hover:text-white transition-all">
+                        <i data-lucide="zap" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Alta Tecnologia</h3>
+                    <p class="text-stone-500 font-light leading-relaxed">Uso de Laserterapia e ILIB para resultados sistêmicos e bem-estar integral.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AVALIAÇÕES REAIS (GOOGLE) -->
+    <section id="avaliacoes" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-[10px] font-bold tracking-[0.4em] uppercase text-stone-400 mb-4">O que dizem nossas clientes</h2>
+                <h3 class="text-3xl md:text-5xl font-bold">Experiências Reais</h3>
+            </div>
+
+            <div class="testimonial-grid gap-6">
+                <!-- Zenilda -->
+                <div class="testimonial-item bg-white p-8 rounded-3xl border border-stone-100 shadow-sm">
+                    <div class="flex gap-1 text-yellow-400 mb-4">
+                        <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                    </div>
+                    <p class="text-stone-600 font-light leading-relaxed mb-6 italic">"Atendimento foi excepcional do início ao fim. Elizabet é extremamente competente, atenciosa e cuidadosa comigo. Com certeza voltarei e recomendo a todos!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center font-bold text-stone-400 text-xs">ZL</div>
+                        <p class="font-bold text-sm">Zenilda Lorenço</p>
+                    </div>
+                </div>
+
+                <!-- Elen -->
+                <div class="testimonial-item bg-stone-900 text-white p-8 rounded-3xl">
+                    <div class="flex gap-1 text-yellow-400 mb-4">
+                        <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                    </div>
+                    <p class="text-stone-300 font-light leading-relaxed mb-6 italic">"Já são 6 anos sendo atendida por uma profissional extremamente competente, atenciosa e humana. Cuidou do meu pós operatório com excelência."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center font-bold text-white text-xs">EL</div>
+                        <p class="font-bold text-sm text-white">Elen Lutiani</p>
+                    </div>
+                </div>
+
+                <!-- Alline -->
+                <div class="testimonial-item bg-white p-8 rounded-3xl border border-stone-100 shadow-sm">
+                    <div class="flex gap-1 text-yellow-400 mb-4">
+                        <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                    </div>
+                    <p class="text-stone-600 font-light leading-relaxed mb-6 italic">"Drenagem maravilhosa, ambiente agradável com uma experiência de muitos anos. Usou tecnologia que eu nem conhecia ainda. Recomendo com empenho!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center font-bold text-stone-400 text-xs">AO</div>
+                        <p class="font-bold text-sm">Alline Oliveira</p>
+                    </div>
+                </div>
+
+                <!-- Rosa Maria -->
+                <div class="testimonial-item bg-white p-8 rounded-3xl border border-stone-100 shadow-sm">
+                    <div class="flex gap-1 text-yellow-400 mb-4">
+                        <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                    </div>
+                    <p class="text-stone-600 font-light leading-relaxed mb-6 italic">"Ambiente e profissional acolhedores, a Elizabet foi muito carinhosa e extremamente cuidadosa no atendimento do meu filho! Super indico 🥰"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center font-bold text-stone-400 text-xs">RS</div>
+                        <p class="font-bold text-sm">Rosa Maria Ribeiro</p>
+                    </div>
+                </div>
+
+                <!-- Rafaela -->
+                <div class="testimonial-item bg-white p-8 rounded-3xl border border-stone-100 shadow-sm">
+                    <div class="flex gap-1 text-yellow-400 mb-4">
+                        <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                    </div>
+                    <p class="text-stone-600 font-light leading-relaxed mb-6 italic">"Comecei meu Pós Operatório com Elizabeth e vejo o quanto seu diferencial faz a diferença! Muito feliz com a escolha."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center font-bold text-stone-400 text-xs">RV</div>
+                        <p class="font-bold text-sm">Rafaela Vilas boas</p>
+                    </div>
+                </div>
+
+                <!-- Maria Eduarda -->
+                <div class="testimonial-item bg-stone-50 p-8 rounded-3xl border border-dashed border-stone-200">
+                    <div class="flex gap-1 text-yellow-400 mb-4">
+                        <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i><i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                    </div>
+                    <p class="text-stone-600 font-light leading-relaxed mb-6 italic">"Profissional excelente! Amei tudo que estou fazendo e já tenho resultados maravilhosos."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center font-bold text-stone-400 text-xs">MA</div>
+                        <p class="font-bold text-sm">Maria Eduarda Arnez</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE / LOCALIZAÇÃO -->
+    <section id="sobre" class="py-24 bg-stone-900 text-white px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div class="photo-frame rounded-[3rem] opacity-90">
+                <img src="" alt="Clinica Elizabet Calisto" class="w-full grayscale brightness-75">
+            </div>
+            <div>
+                <h2 class="text-[10px] font-bold tracking-[0.4em] uppercase text-stone-500 mb-6">Onde estamos</h2>
+                <h3 class="text-4xl font-bold mb-8">Um espaço planejado para o seu cuidado.</h3>
+                <p class="text-stone-400 font-light leading-relaxed mb-10 text-lg">
+                    Localizada no coração de Brusque, nossa clínica oferece o que há de mais moderno em infraestrutura e equipamentos. Cada detalhe foi pensado para proporcionar segurança e conforto durante o seu tratamento.
+                </p>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <i data-lucide="map-pin" class="w-6 h-6 text-[#d4a373]"></i>
+                        <div>
+                            <p class="font-bold">Endereço</p>
+                            <p class="text-stone-400 text-sm">Rua Alexandre Athanasio Gevaerd, 45, Brusque - SC</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <i data-lucide="clock" class="w-6 h-6 text-[#d4a373]"></i>
+                        <div>
+                            <p class="font-bold">Atendimento</p>
+                            <p class="text-stone-400 text-sm">Segunda a Sexta, com hora marcada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <footer class="py-24 px-6 text-center bg-white">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl md:text-6xl font-bold mb-10">Pronta para transformar a sua relação com o espelho?</h2>
+            <p class="text-stone-500 text-xl font-light mb-12">Não deixe o seu autocuidado para depois. Agende hoje mesmo sua primeira sessão.</p>
+            <a href="https://wa.me/554797451492" class="inline-block bg-black text-white px-14 py-6 rounded-2xl font-bold text-sm tracking-[0.2em] uppercase hover:scale-105 transition-transform btn-glow">
+                Quero meu agendamento
+            </a>
+            
+            <div class="mt-24 pt-12 border-t border-stone-100 grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-left">
+                <p class="text-[10px] text-stone-400 font-bold tracking-widest uppercase">
+                    © 2024 Elizabet Calisto Estética Avançada
+                </p>
+                <div class="flex md:justify-end gap-6">
+                    <a href="https://www.instagram.com/elizabetcalistoestetica/" class="text-stone-400 hover:text-black transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                    <a href="https://wa.me/554797451492" class="text-stone-400 hover:text-black transition-colors"><i data-lucide="phone" class="w-5 h-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
